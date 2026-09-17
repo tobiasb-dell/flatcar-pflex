@@ -1,0 +1,7 @@
+.work/
+.local-history/
+.venv/
+dist/
+__pycache__/
+*.pyc
+*.ko

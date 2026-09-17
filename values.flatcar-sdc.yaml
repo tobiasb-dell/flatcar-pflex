@@ -1,0 +1,13 @@
+# For Dell csi-vxflexos 2.16.0 plus scripts/helm-flatcar-post-renderer.py.
+# Requires real backend secret. Not installed during the backend-free test.
+version: "2.16.0"
+images:
+  powerflexSdc:
+    image: quay.io/dell/storage/powerflex/sdc:5.0@sha256:1436844390ea95507bf0a24c68a300a355f010a90ed654a42a1f091482b6a0fc
+node:
+  sdc:
+    enabled: true
+    sdcSFTPRepo:
+      enabled: false
+monitor:
+  enabled: false
